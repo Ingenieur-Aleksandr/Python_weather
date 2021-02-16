@@ -2,7 +2,7 @@ import pyowm
 from pyowm.utils.config import get_default_config
 config_dict = get_default_config()
 config_dict['language'] = 'ru'  # your language here
-owm = pyowm.OWM('594549d1efa72beefda55cc2acbe9428', config_dict)
+owm = pyowm.OWM('API', config_dict)
 mgr = owm.weather_manager()
 place=input('Введите город: ')
 observation = mgr.weather_at_place(place)
